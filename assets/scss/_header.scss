@@ -1,7 +1,7 @@
-
-.header{
-  margin-bottom: $gap * 5.333333
+.header {
+  @extend %margin-bottom-lg;
 }
+
 .header-logo
 {
     padding-top: 100px;
