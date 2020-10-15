@@ -111,6 +111,6 @@ body {
 @media (max-width: 575.8px) {
   .header-logo__title {
     font-size: 2.5rem;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
   }
 }
