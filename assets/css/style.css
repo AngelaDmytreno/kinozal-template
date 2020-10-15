@@ -1,11 +1,44 @@
+.header-logo__title, .header-logo__description {
+  text-shadow: 0 0 30px #000000, 0 0 15px #000000, 0 0 5px #000000;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #053159;
+}
+
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #517ba2;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  border-radius: 4px;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: #165690;
+}
+
+.navbar-left li {
+  margin: 5px 5px 5px 0;
+}
+
+.navbar-right li {
+  margin: 5px 0 5px 0;
+}
+
 html {
   font-size: 16px;
   overflow-y: scroll;
 }
 
 body {
-  font-size: 1rem;
   font-family: "PT Sans", sans-serif;
+  font-size: 1rem;
 }
 
 .header-logo {
@@ -25,7 +58,6 @@ body {
   font-family: "PT Serif", serif;
   letter-spacing: 0.33em;
   margin-right: -15px;
-  text-shadow: 0 0 30px black, 0 0 15px black, 0 0 5px black;
 }
 
 .header-logo__description {
@@ -33,5 +65,4 @@ body {
   color: #fff;
   letter-spacing: 0.2em;
   font-size: 1.15rem;
-  text-shadow: 0 0 30px black, 0 0 15px black, 0 0 5px black;
 }
