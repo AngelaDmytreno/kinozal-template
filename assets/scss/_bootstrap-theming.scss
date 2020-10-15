@@ -27,6 +27,20 @@
     }
   }
 }
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-header {
+  text-align: center;
+}
+
+.navbar-toggle {
+  float: none;
+  margin-right: 0;
+}
+
 .navbar-left {
   @include sm-min {
     li {
@@ -48,5 +62,3 @@
     margin-top: 0;
   }
 }
-
-
