@@ -1,35 +1,37 @@
 .navbar-inverse {
+  margin-bottom: 0;
+
+  border-color: transparent;
   background-color: darken($color-dark, 4%);
 
   .navbar-nav {
     > .active > a {
       background-color: $color-primary-dark;
 
-      &:focus,
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: $color-primary-light;
       }
     }
 
-    > li > a {
-      transition: background-color 0.5s;
-      @include sm-min {
-        border-radius: 4px;
-      }
-      @include sm {
-        text-align: center;
-      }
+    > li {
+      > a {
+        transition: background-color 0.5s;
 
-      &:focus,
-      &:hover {
-        background-color: $color-primary;
+        @include sm-min {
+          border-radius: 4px;
+        }
+        @include sm {
+          text-align: center;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: $color-primary;
+        }
       }
     }
   }
-}
-
-.navbar {
-  margin-bottom: 0;
 }
 
 .navbar-header {
@@ -38,6 +40,7 @@
 
 .navbar-toggle {
   float: none;
+
   margin-right: 0;
 }
 
@@ -66,16 +69,18 @@
 .panel {
   margin-bottom: $gap * 2;
 
-  &-info {
-    border: none;
-    background-color: darken($color-light, 8%);
+  border: none;
+  background-color: darken($color-light, 8%);
 
-    > .panel-heading {
-      color: $color-light;
-      background-color: $color-accent;
-      border: none;
-      font-size: 1.2rem;
+  &-info {
+    .panel-heading {
       letter-spacing: 0.1em;
+
+      color: $color-light;
+      border: none;
+      background-color: $color-accent;
+
+      font-size: 1.2rem;
     }
   }
 
@@ -83,4 +88,26 @@
     border: 1px solid $color-gray;
     border-radius: 0 0 4px 4px;
   }
+}
+
+.input {
+  &-lg,
+  &-group-lg > .form-control {
+    font-size: 0.875rem;
+  }
+}
+
+.well {
+  border-color: $color-gray;
+  background-color: lighten($color-gray, 8%);
+}
+
+.embed-responsive {
+  border: 1px solid $color-gray;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.thumbnail {
+  transition: background-color 0.25s;
 }
